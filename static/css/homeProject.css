@@ -1,0 +1,404 @@
+/*@import "contactsProject.css" (min-width: 481px) and (max-width: 1080px);*/
+div {
+
+}
+body {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.contact {
+    font-size: 14px;
+    background-color: #bbbbbb;
+    text-align: left;
+    padding-left: 300px;
+
+
+
+}
+.contact p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-15px);
+
+}
+.inlain {
+    display: flex;
+    list-style-type: none;
+    padding: 15px;
+    }
+.inlain li {
+    margin-left: 94px;
+}
+.home {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    background-color: #dad9d9;
+    text-align: left;
+    padding-left: 400px;
+    height: 100px;
+    transform: translateY(-15px);
+    margin: 0px;
+
+
+}
+.home ul {
+    display: flex;
+    list-style-type: none;
+    padding: 15px;
+
+}
+.home li {
+    margin-left: 94px;
+    }
+.button-cover {
+    position: relative;
+    background-color: red;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 16px;
+    border: none;
+    padding: 15px;
+    margin-left: 5rem;
+    color: #fff;
+    transition: 0.35s;
+}
+.button-cover:hover {
+    color: #000000;
+
+}
+header {
+    left: 0;
+    right: 0;
+    }
+
+.nav * {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 100;
+
+
+
+}
+.nav ul,
+.nov ol {
+    list-style: none;
+}
+.nav ul {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.nav ul li {
+    position: relative;
+    border-bottom-color: red;
+}
+.nav ul li a {
+    position: relative;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.51);
+    padding: 25px 30px 25px 50px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s ease;
+
+}
+
+.nav ul li:first-child {
+    position: relative;
+    border-bottom-color: red;
+}
+.nav ul li:last-child {
+    border-bottom-color: red;
+
+}
+.nav li a:hover {
+    color: #cccccc;
+    transition: all 0.3s ease;
+
+}
+.nav li ul {
+    position: absolute;
+    min-width: 150px;
+    display: none;
+    }
+.nav li ul li {
+    border: rgba(0, 0, 0, 0.87);
+    position: relative;
+    }
+.nav li ul li a{
+    position: relative;
+    padding: 10px;
+    text-transform: none;
+    }
+.nav li ul li ul {
+    position: absolute;
+    right: -337px;
+    top: 0;
+}
+.nav li:hover > ul {
+    display: block;
+}
+.nav_line {
+    position: relative;
+}
+.nav_line:before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+}
+.nav_line:hover {
+    color: red;
+}
+.nav_line:hover:before {
+    transform: scaleX(1);
+    transition: transform 0.3s;
+    transform-origin: left;
+    border-radius: 5px;
+}
+
+
+.slider {
+    overflow: hidden;
+    border: 1px solid #07090a;
+}
+.middle {
+    position: absolute;
+}
+
+.navigation {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    bottom: 16px;
+    display: flex;
+}
+.bar {
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #b91c1c;
+    opacity: 0.7;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+.bar:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+.slides {
+    width: 300%;
+    height: 700px;
+    display: flex;
+
+}
+.slide {
+    width: 33.3%;
+    transition: all .6s ease;
+    }
+.slide img {
+    width: 100%;
+    /*height: 100%;*/
+
+}
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+#r2:checked ~ .s1 {
+    margin-left: -33.3%;
+}
+#r3:checked ~ .s1 {
+    margin-left: -66.6%;
+}
+.slidetext1 {
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    font-size: 50px;
+    word-wrap: break-word;
+    text-align: center;
+    margin: auto;
+    line-height: 25px;
+    padding-top: 10%;
+    padding-left: 30%;
+    animation: slidetext 5s;
+}
+.slidetext2 {
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    font-size: 100px;
+    word-wrap: break-word;
+    text-align: center;
+    margin: auto;
+    line-height: 25px;
+    padding-top: 15%;
+    padding-left: 30%;
+    animation: slidetext 10s;
+
+}
+.slidetext3 {
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    font-size: 25px;
+    word-wrap: break-word;
+    text-align: center;
+    margin: auto;
+    line-height: 25px;
+    padding-top: 20%;
+    padding-left: 30%;
+    animation: slidetext 15s;
+}
+@keyframes slidetext {
+    from{opacity: 0}
+    to{opacity: 1}
+
+}
+.picture {
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    width: 900px;
+    height: 300px;
+    border: 1px;
+    top: 80%;
+    left: 29%;
+
+}
+.picture img {
+    position: relative;
+    height: 300px;
+    width: 300px;
+}
+.picture p {
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    font-size: 20px;
+    word-wrap: break-word;
+    text-align: center;
+    margin: auto;
+    max-width: 300px;
+    line-height: 25px;
+    padding-top: 100px;
+}
+.info {
+    position: absolute;
+    top: 120%;
+    padding-left: 29%;
+    width: 900px;
+ }
+.info img {
+    padding-left: 300px;
+}
+.infotext1 {
+    font-size: 25px;
+    max-width: 300px;
+}
+.infotext2 {
+    padding-left: 300px;
+}
+.buttonServisProject {
+    position: relative;
+    background-color: red;
+    border-radius: 3px;
+    width: 200px;
+    font-size: 16px;
+    border: none;
+    padding: 15px;
+    margin-left: 33%;
+    color: #fff;
+    transition: 0.35s;
+}
+.buttonContactsProject {
+    position: relative;
+    background-color: rgba(7, 7, 7, 0.42);
+    border-radius: 3px;
+    width: 200px;
+    font-size: 16px;
+    border: none;
+    padding: 15px;
+    margin-left: 5rem;
+    color: #b91c1c;
+    transition: 0.35s;
+    border-color: #b91c1c;
+    border-width: 2px;
+}
+.conclusion {
+    background-color: rgba(0, 0, 0, 0.87);
+    top: 170%;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+}
+.heading {
+    position: relative;
+    color: #b91c1c;
+    top: 20%;
+    left: 25%;
+}
+.information {
+    position: relative;
+    color: #fff;
+    top: 20%;
+    left: 25%;
+    max-width: 250px;
+
+}
+.heading1 {
+    position: relative;
+    color: #b91c1c;
+    top: -8%;
+    left: 50%;
+}
+.information1 {
+    position: relative;
+    color: #fff;
+    top: -8%;
+    left: 50%;
+    max-width: 250px;
+}
+.heading2 {
+    position: relative;
+    color: #b91c1c;
+    top: -35%;
+    left: 70%;
+}
+.information2 {
+    position: relative;
+    color: #fff;
+    top: -35%;
+    left: 70%;
+    max-width: 250px;
+}
+.corp {
+    background-color: rgba(0, 0, 0, 0.87);
+    top: 210%;
+    height: 120px;
+    width: 100%;
+    position: absolute;
+}
+.corporation {
+    position: relative;
+    color: #fff;
+    padding-left: 50%;
+    padding-top: 30px;
+}

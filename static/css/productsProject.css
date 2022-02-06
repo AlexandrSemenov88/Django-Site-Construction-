@@ -1,0 +1,232 @@
+/*@import "contactsProject.css" (min-width: 481px) and (max-width: 1080px);*/
+div {
+
+}
+body {
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.contact {
+    font-size: 14px;
+    background-color: #bbbbbb;
+    text-align: left;
+    padding-left: 300px;
+
+
+
+}
+.contact p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-15px);
+
+}
+.inlain {
+    display: flex;
+    list-style-type: none;
+    padding: 15px;
+}
+.inlain li {
+    margin-left: 94px;
+}
+.home {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    background-color: #dad9d9;
+    text-align: left;
+    padding-left: 400px;
+    height: 100px;
+    transform: translateY(-15px);
+    margin: 0px;
+
+
+}
+.home ul {
+    display: flex;
+    list-style-type: none;
+    padding: 15px;
+
+}
+.home li {
+    margin-left: 94px;
+}
+.button-cover {
+    position: relative;
+    background-color: red;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 16px;
+    border: none;
+    padding: 15px;
+    margin-left: 5rem;
+    color: #fff;
+    transition: 0.35s;
+}
+.button-cover:hover {
+    color: #000000;
+
+}
+header {
+    left: 0;
+    right: 0;
+}
+
+.nav * {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 1);
+    z-index: 100;
+
+
+
+}
+.nav ul,
+.nov ol {
+    list-style: none;
+}
+.nav ul {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.nav ul li {
+    position: relative;
+    border-bottom-color: red;
+}
+.nav ul li a {
+    position: relative;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.51);
+    padding: 25px 30px 25px 50px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.5s ease;
+
+}
+
+.nav ul li:first-child {
+    position: relative;
+    border-bottom-color: red;
+}
+.nav ul li:last-child {
+    border-bottom-color: red;
+
+}
+.nav li a:hover {
+    color: #cccccc;
+    transition: all 0.3s ease;
+
+}
+.nav li ul {
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+.nav li ul li {
+    border: rgba(0, 0, 0, 0.87);
+    position: relative;
+}
+.nav li ul li a{
+    position: relative;
+    padding: 10px;
+    text-transform: none;
+}
+.nav li ul li ul {
+    position: absolute;
+    right: -337px;
+    top: 0;
+}
+.nav li:hover > ul {
+    display: block;
+}
+.nav_line {
+    position: relative;
+}
+.nav_line:before {
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: red;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+}
+.nav_line:hover {
+    color: red;
+}
+.nav_line:hover:before {
+    transform: scaleX(1);
+    transition: transform 0.3s;
+    transform-origin: left;
+    border-radius: 5px;
+}
+
+
+.conclusion {
+    background-color: rgba(0, 0, 0, 0.87);
+    top: 170%;
+    height: 500px;
+    width: 100%;
+    position: absolute;
+}
+.heading {
+    position: relative;
+    color: #b91c1c;
+    top: 20%;
+    left: 25%;
+}
+.information {
+    position: relative;
+    color: #fff;
+    top: 20%;
+    left: 25%;
+    max-width: 250px;
+
+}
+.heading1 {
+    position: relative;
+    color: #b91c1c;
+    top: -8%;
+    left: 50%;
+}
+.information1 {
+    position: relative;
+    color: #fff;
+    top: -8%;
+    left: 50%;
+    max-width: 250px;
+}
+.heading2 {
+    position: relative;
+    color: #b91c1c;
+    top: -35%;
+    left: 70%;
+}
+.information2 {
+    position: relative;
+    color: #fff;
+    top: -35%;
+    left: 70%;
+    max-width: 250px;
+}
+.corp {
+    background-color: rgba(0, 0, 0, 0.87);
+    top: 210%;
+    height: 120px;
+    width: 100%;
+    position: absolute;
+}
+.corporation {
+    position: relative;
+    color: #fff;
+    padding-left: 50%;
+    padding-top: 30px;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="firstProject">
+    <meta author="Alexander">
+    <meta generator="Html">
+    <meta keywords="">
+    <meta name="viewport" content="width=device-width">
+    <link media="all" rel="stylesheet" href="../../static/css/contactsProject.css">
+    <link media="all" rel="stylesheet" href="../../static/images">
+    <title>myProject</title>
+
+</head>
+
+
+<div class="contact">
+    <ul class="inlain">
+        <li><a><img width="15px" height="15px" src="/myProject/static/images/phone.png"> +7 383 209 33 35</a></li>
+        <li><a><img width="15px" height="15px" src="/myProject/static/images/success.png">Пн - Пт 09:00 - 17:00</a></li>
+        <li><a><img width="15px" height="15px" src="/myProject/static/images/arrow.png">Новосибирск</a></li>
+    </ul>
+</div>
+
+<div class="home">
+    <h1><a> <img src="/myProject/static/images/pro_mk_лого.png"></a> </h1>
+    <ul>
+        <li><a><img width="15px" height="15px" src="/myProject/static/images/success.png"></a>Проффесианолизм</li>
+        <li><a><img width="15px" height="15px" src="/myProject/static/images/success.png"></a>Качество</li>
+        <li><a><img width="15px" height="15px" src="/myProject/static/images/success.png"></a>Скорость</li>
+    </ul>
+    <button class="button-cover">Связаться с нами</button>
+
+</div>
+<header>
+
+
+    <div>
+        <nav class="nav">
+            <ul><li><a href="{% url 'homeProject'%}" class="nav_line"> Главная </a></li>
+                <li><a href="{% url 'companiesProject'%}"class="nav_line"> О компании </a></li>
+                <li><a href="{% url 'servisProject'%}"class="nav_line"> Услуги</a>
+                    <ul>
+                        <li><a href="{% url 'production'%}"> Изготовление металлоконструкций</a></li>
+                        <li><a href="{% url 'metalworking'%}"> Металлообработка</a></li>
+                        <li><a href="{% url 'designing'%}"> Проектирование металлоконструкций</a></li>
+                        <li><a href="{% url 'mounting'%}"> Монтаж металлоконструкций</a></li>
+                    </ul>
+                </li>
+                <li><a href="{% url 'productsProject'%}"class="nav_line"> Наша продукция</a>
+                    <ul>
+                        <li><a href="{% url 'wireframes'%}"> Каркасы для зданий и сооружений</a>
+                            <ul>
+                                <li><a href="{% url 'straightWalled'%}"> Каркасы для прямостенных зданий и сооружений</a></li>
+                                <li><a href="{% url 'arched'%}"> Каркасы для зданий и сооружений арочного типа</a></li>
+                                <li><a href="{% url 'combined'%}"> Комбинированные каркасы</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url 'constructions'%}"> Конструкции для усиления бескаркасных арочных сооружений</a></li>
+                        <li><a href="{% url 'screwPiles'%}"> Винтовые сваи</a></li>
+                        <li><a href="{% url 'architecturalForms'%}"> Конструкции малых архитектурных форм</a></li>
+                        </li>
+                    </ul>
+                <li><a href="{% url 'newsProject'%}"class="nav_line"> Новости</a></li>
+                <li><a href="{% url 'objectsProject'%}"class="nav_line"> Наши объекты</a></li>
+                <li><a href="{% url 'contactsProject'%}"class="nav_line"> Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+
+<div class="conclusion">
+    <div class="heading">НАША КОМПАНИЯ</div>
+    <div class="information">
+        <p>Компания Pro MK осуществляет полный спектр услуг по проектированию, изготовлению и монтажу металлоконструкций зданий и сооружений.</p>
+    </div>
+    <div class="heading1">КОНТАКТЫ</div>
+    <div class="information1">
+        <p>г. Новосибирск</p>
+        <p>+7 383 209 33 35</p>
+        <p> info@pro-mk54.ru</p>
+    </div>
+    <div class="heading2">РЕКВИЗИТЫ</div>
+    <div class="information2">
+        <p>ООО «Про-МК»</p>
+        <p>ИНН: 5406812595</p>
+        <p>ОГРН: 1215400017447</p>
+        <p>г. Новосибирск, ул. Гоголя,</p>
+        <p>д. 15, офис 410</p>
+    </div>
+</div>
+
+<footer>
+    <aside class="corp">
+        <p class="corporation">© copyright 2021 Example Corp.</p>
+    </aside>
+
+</footer>
+
+</body>
+</html>
