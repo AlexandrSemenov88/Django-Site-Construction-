@@ -1,5 +1,5 @@
 
-from django.shortcuts import HttpResponse, render
+from django.shortcuts import render
 
 def homeProject(request):   # Главная
     return render(request, "main/homeProject.html")
