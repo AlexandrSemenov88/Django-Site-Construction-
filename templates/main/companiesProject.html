@@ -1,8 +1,12 @@
 {% extends "main/homeProject.html" %}
 {% load static %}
+{% block link %}
+    <link media="all" rel="stylesheet" href="../../static/css/companiesProject.css">
+    <link media="all" rel="stylesheet" href="../../static/images">
+{% endblock link %}
 {% block body %}
     <div class="zakat">
-        <<img src="{% static 'images/zakat.jpg'%}" alt="">
+        <img src="{% static 'images/zakat.jpg'%}" alt="">
         <div class="zakath"><h1> О нас </h1></div>
         <div class="zakatp"><p>много лет совершенствований</p></div>
     </div>

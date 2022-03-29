@@ -1,34 +1,35 @@
 /*@import "contactsProject.css" (min-width: 481px) and (max-width: 1080px);*/
-div {
-
+header {
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
 body {
-    width: auto;
-    margin: 0;
-    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .contact {
     font-size: 14px;
     background-color: #bbbbbb;
     text-align: left;
-    padding-left: 300px;
-
-
-
+    max-width: 1200px;
+    padding-left: 10%;
 }
-.contact p {
-    position: relative;
-    top: 50%;
-    transform: translateY(-15px);
 
-}
 .inlain {
     display: flex;
     list-style-type: none;
-    padding: 15px;
-}
+    padding: 30px;
+
+    }
+/*@media screen and (max-width: 1200px) {*/
+/*    .inlain{*/
+/*        max-width: none;*/
+/*    }*/
+/*}*/
 .inlain li {
-    margin-left: 94px;
+    padding-left: 10%;
+
 }
 .home {
     display: flex;
@@ -36,31 +37,29 @@ body {
     font-size: 14px;
     background-color: #dad9d9;
     text-align: left;
-    padding-left: 400px;
     height: 100px;
     transform: translateY(-15px);
     margin: 0px;
-
-
+    max-width: 1200px;
+    padding-left: 10%;
 }
 .home ul {
     display: flex;
     list-style-type: none;
-    padding: 15px;
+    padding: 10%;
 
 }
 .home li {
-    margin-left: 94px;
-}
+    margin-left: 2rem;
+    }
 .button-cover {
-    position: relative;
+    position: center;
     background-color: red;
     border-radius: 5px;
     width: 200px;
     font-size: 16px;
     border: none;
     padding: 15px;
-    margin-left: 5rem;
     color: #fff;
     transition: 0.35s;
 }
@@ -68,21 +67,13 @@ body {
     color: #000000;
 
 }
-header {
-    left: 0;
-    right: 0;
-}
+
 
 .nav * {
-    margin: 0;
-    padding: 0;
-    position: absolute;
+    position: relative;
     top: 0;
     background-color: rgba(0, 0, 0, 1);
     z-index: 100;
-
-
-
 }
 .nav ul,
 .nov ol {
@@ -101,7 +92,7 @@ header {
     position: relative;
     display: block;
     background-color: rgba(0, 0, 0, 0.51);
-    padding: 25px 30px 25px 50px;
+    padding: 25px 25px 25px 35px;
     font-size: 14px;
     color: white;
     text-decoration: none;
@@ -126,18 +117,19 @@ header {
 }
 .nav li ul {
     position: absolute;
-    min-width: 150px;
+    min-width: 50px;
     display: none;
-}
+    top: 55px;
+    }
 .nav li ul li {
     border: rgba(0, 0, 0, 0.87);
     position: relative;
-}
+    }
 .nav li ul li a{
     position: relative;
     padding: 10px;
     text-transform: none;
-}
+    }
 .nav li ul li ul {
     position: absolute;
     right: -337px;
@@ -170,12 +162,185 @@ header {
 }
 
 
+.slider {
+    overflow: hidden;
+    border: 1px solid #07090a;
+    max-width: 1200px;
+}
+.middle {
+    position: absolute;
+}
+
+.navigation {
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    bottom: 16px;
+    display: flex;
+}
+.bar {
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color: #b91c1c;
+    opacity: 0.7;
+    border-radius: 10px;
+    transition: all .4s ease;
+}
+.bar:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+.slides {
+    width: 300%;
+    height: 700px;
+    display: flex;
+
+}
+.slide {
+    width: 33.3%;
+    transition: all .6s ease;
+    }
+.slide img {
+    width: 100%;
+    /*height: 100%;*/
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+#r2:checked ~ .s1 {
+    margin-left: -33.3%;
+}
+#r3:checked ~ .s1 {
+    margin-left: -66.6%;
+}
+.slidetext1 {
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    font-size: 50px;
+    word-wrap: break-word;
+    text-align: center;
+    margin: auto;
+    line-height: 25px;
+    padding-top: 10%;
+    padding-left: 20%;
+    animation: slidetext 5s;
+}
+.slidetext2 {
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    font-size: 50px;
+    word-wrap: break-word;
+    text-align: center;
+    margin: auto;
+    line-height: 25px;
+    padding-top: 15%;
+    padding-left: 20%;
+    animation: slidetext 10s;
+
+}
+.slidetext3 {
+    position: absolute;
+    top: 0;
+    color: #ffffff;
+    font-size: 25px;
+    word-wrap: break-word;
+    text-align: center;
+    margin: auto;
+    line-height: 25px;
+    padding-top: 20%;
+    padding-left: 20%;
+    animation: slidetext 15s;
+}
+@keyframes slidetext {
+    from{opacity: 0}
+    to{opacity: 1}
+
+}
+.picture {
+    padding-top: 540px;
+    margin: auto;
+    display: flex;
+    width: 900px;
+    height: 300px;
+    border: 1px;
+}
+.picture img {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+}
+.picture p {
+    position: relative;
+    top: 0;
+    color: #ffffff;
+    font-size: 20px;
+    word-wrap: break-word;
+    text-align: center;
+    margin: auto;
+    max-width: 300px;
+    line-height: 25px;
+    padding-top: 100px;
+}
+.info {
+    position: relative;
+    top: 50px;
+    padding-left: 20%;
+    width: 900px;
+    max-width: 1200px;
+ }
+.info img {
+    padding-left: 300px;
+}
+.infotext1 {
+    font-size: 25px;
+    max-width: 300px;
+}
+.infotext2 {
+    padding-left: 300px;
+    flex-wrap: wrap;
+}
+.buttonServisProject {
+    position: relative;
+    background-color: red;
+    border-radius: 3px;
+    width: 200px;
+    font-size: 16px;
+    border: none;
+    padding: 15px;
+    margin-left: 33%;
+    color: #fff;
+    transition: 0.35s;
+}
+.buttonContactsProject {
+    position: relative;
+    background-color: rgba(7, 7, 7, 0.42);
+    border-radius: 3px;
+    width: 200px;
+    font-size: 16px;
+    border: none;
+    padding: 15px;
+    margin-left: 5rem;
+    color: #b91c1c;
+    transition: 0.35s;
+    border-color: #b91c1c;
+    border-width: 2px;
+}
 .conclusion {
     background-color: rgba(0, 0, 0, 0.87);
-    top: 170%;
     height: 500px;
     width: 100%;
-    position: absolute;
+    top: -60px;
+    position: relative;
 }
 .heading {
     position: relative;
@@ -219,96 +384,102 @@ header {
 }
 .corp {
     background-color: rgba(0, 0, 0, 0.87);
-    top: 210%;
+    top: -160px;
     height: 120px;
     width: 100%;
-    position: absolute;
+    position: relative;
 }
 .corporation {
     position: relative;
     color: #fff;
-    padding-left: 50%;
+    text-align: center;
     padding-top: 30px;
 }
-
 .zakat {
-    top: 20%;
     width: 100%;
-    position: absolute;
-    z-index: 1;
-}
+    position: relative;
+    }
 .zakat img {
     width: 100%;
     height: 500px;
 }
 .zakath {
-    margin-left: 45%;
-    top: 30%;
-    position: absolute;
+
+    position: relative;
     color: #ffffff;
     font-size: 40px;
+    text-align: center;
+    margin-top: -400px;
 }
 .zakatp {
-    margin-left: 40%;
-    top: 55%;
-    position: absolute;
+
+    position: relative;
     color: #ffffff;
     font-size: 30px;
+    text-align: center;
 }
 .balgarka {
     width: 100%;
     height: 500px;
-    top: 74%;
-    position: absolute;
-    z-index: 0;
+    position: relative;
+    z-index: 1;
+
+
+
 }
 .balgarka img {
-    width: 50%;
+    max-width: 50%;
     height: 100%;
-    position: absolute;
-    z-index: 0;
+    margin-top: 132px;
+    z-index: 1;
+    position: relative;
+
+
+
 }
 .balgarkatext {
     margin-left: 60%;
     max-width: 400px;
-    padding-top: 4%;
+    max-height: 400px;
     color: rgba(7, 7, 7, 0.8);
     font-size: 20px;
+    margin-top: -400px;
+    z-index: 1;
+    position: relative;
 }
 .zalivka {
     background: rgba(185, 28, 28, 0.5);
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    z-index: 1;
+    max-width: 50%;
+    height: 396px;
+    margin-top: -400px;
+    z-index: 2;
+    position: relative;
 }
 .history {
     width: 100%;
     height: 500px;
-    top: 130%;
-    position: absolute;
+    top: 25px;
+    position: relative;
+    display: flex;
     z-index: 0;
 }
 .history1 {
-    max-width: 400px;
-    padding-left: 10%;
+    max-width: 50%;
     font-size: 20px;
     color: rgba(7, 7, 7, 0.8);
+
 }
 .history2 {
     background: #383838;
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 415px;
-    top: -7%;
-    ;
-    margin-left: 50%;
 }
 .history2 p {
     font-size: 20px;
-    max-width: 400px;
+    max-width: 350px;
     color: #cccccc;
-    padding-left: 10%;
-    padding-top: 3%;
+    padding-left: 20%;
+    padding-top: 5%;
     position: relative;
 }

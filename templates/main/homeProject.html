@@ -7,14 +7,13 @@
     <meta name="firstProject">
     <meta author="Alexander">
     <meta generator="Html">
-
     <meta keywords="">
     <meta name="viewport" content="width=device-width">
-
+    <link rel="stylesheet" href="../../static/adaptive.css">
+{% block link %}
     <link media="all" rel="stylesheet" href="../../static/css/homeProject.css">
-    <link media="all" rel="stylesheet" href="../../static/css/companiesProject.css">
     <link media="all" rel="stylesheet" href="../../static/images">
-
+{% endblock link %}
     <title>myProject</title>
 
 </head>
@@ -113,20 +112,20 @@
     </div>
 </div>
 <div class="picture">
-    <div><img src="{% static 'images/1.jpg'%}" alt="">
+    <div><img src="{% static 'images/1.jpg' %}" alt="">
         <p>Контроль качества выпускаемой продукции на каждом этапе изготовления</p>
     </div>
-    <div><img src="{% static 'images/2.jpg'%}" alt="">
+    <div><img src="{% static 'images/2.jpg' %}" alt="">
         <p>Высокотехнологичное производство и забота об окружающей среде</p>
     </div>
-    <div><img src="{% static 'images/3.jpg'%}" alt="">
+    <div><img src="{% static 'images/3.jpg' %}" alt="">
         <p>Квалифицированные специалисты с большим опытом реализации разноплановых проектов</p>
     </div>
 </div>
 <div class="info">
     <div>
         <p class="infotext1">6 лет на рынке металлоконструкций</p>
-        <img src="{% static 'images/about-home-icon.png'%}" alt="">
+        <img src="{% static 'images/about-home-icon.png' %}" alt="">
         <p class="infotext2">Компания Pro MK осуществляет полный спектр услуг по проектированию, изготовлению и монтажу
             металлоконструкций зданий и сооружений. У нас есть свои собственные производственные цеха и отдел
             проектирования. Выпускаемая продукция проходит контроль качества на каждом этапе изготовления. В зависимости
